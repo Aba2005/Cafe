@@ -210,14 +210,15 @@ input {
         }
 
         .topics h2 {
-            font-size: larger;
+            font-size: large;
         }
 
         .topics {
             gap: 0.1rem;
         }
         .card {
-        max-width: 80%;
+        max-width: 100%;
+        font-size: x-large;
     }
     }
 }
