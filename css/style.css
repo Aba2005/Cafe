@@ -1,31 +1,80 @@
-.icons {
+.top_button {
+    position: fixed;
+    margin-bottom: 60vh;
+    margin-left: 93vw;
+    opacity: 30%;
+}
+
+.top_button img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.top_button:hover {
+    opacity: 80%;
+}
+
+body {
+    background-image: url(../images/header_backgroud.png);
+    background-size: contain;
+    background-size: 30%;
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    height: 25vh;
+}
+
+.name {
+    color: black;
+    font-size: 5rem;
+    font-variant: small-caps;
+    text-shadow: 1rem 1rem 1rem rgba(0, 0, 0, .7);
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.logo {
+    height: 75%;
+    margin: 0 0.5rem 0 0.5rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, .7);
 }
 
 #filters {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid black;
+    gap: 1rem;
     border-radius: 5px;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
     margin: 0 auto;
     color: white;
     background-color: black;
-    opacity: 80%;
+    opacity: 90%;
+    padding: 2rem;
 }
 
-#filters:hover {
-    opacity: 100%;
-}
-
-input {
-    height: 2rem;
+.topic {
+    border: 2px solid white;
+    width: 40%;
     border-radius: 10px;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    opacity: 80%;
+    font-variant: small-caps;
+}
+
+.topic:hover {
+    cursor: pointer;
+    opacity: 100%;
 }
 
 .filter {
@@ -46,10 +95,6 @@ input {
 .card-amount:hover {
     cursor: pointer;
     opacity: 100%;
-}
-
-.topic {
-    font-weight: bold;
 }
 
 .disable {
@@ -81,15 +126,18 @@ input {
     opacity: 80%;
 }
 
+.card p {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+}
+
+.price {
+    font-weight: bold;
+}
+
 .card:hover {
     opacity: 100%;
-}
-
-.tags {
-    color: blue;
-}
-
-.card:hover {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
     cursor: pointer;
 }
@@ -104,44 +152,23 @@ input {
     text-align: center;
 }
 
-.card p {
-    font-size: x-large;
-    text-align: center;
-}
-
-.card-amount {
-    border: 2px solid white;
-    border-radius: 15px;
-    text-align: center;
-    padding: 0rem 1rem;
-    opacity: 80%;
-    color: white;
-}
-
 .shadow:hover {
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .175);
 }
 
-.topics {
+footer {
+    width: 100%;
+    background-color: black;
+    margin-top: 1rem;
+    height: 20vh;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    gap: 0.5rem;
 }
 
-.topic {
-    border: 2px solid white;
-    border-radius: 15px;
-    text-align: center;
-    padding: 0.5rem 1rem;
-    font-size: x-large;
+footer a {
     color: white;
-    opacity: 80%;
-    font-variant: small-caps;
-}
-
-.topic:hover {
-    cursor: pointer;
-    opacity: 100%;
+    text-decoration: none;
 }
 
 @media(max-width: 768px) {
@@ -150,11 +177,7 @@ input {
     }
 
     .name {
-        font-size: xx-large;
-    }
-
-    .logos {
-        height: 10vh;
+        font-size: 72px;
     }
 
     .card {
@@ -180,6 +203,7 @@ input {
 
     #filters {
         flex-direction: column;
+        align-items: center;
         width: 100%;
     }
 
@@ -204,21 +228,33 @@ input {
         padding-bottom: 1rem;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 512px) {
         .card h2 {
             font-size: larger;
         }
 
         .topics h2 {
-            font-size: large;
+            font-size: smaller;
         }
 
         .topics {
             gap: 0.1rem;
         }
+
         .card {
-        max-width: 100%;
-        font-size: x-large;
-    }
+            max-width: 60%;
+        }
+
+        .name {
+            font-size: 48px;
+        }
+
+        .logo {
+            height: 35%;
+        }
+
+        footer {
+            font-size: 14px;
+        }
     }
 }
