@@ -1,0 +1,116 @@
+body {
+    width: 100vw;
+    background-image: url(../images/header_backgroud.png);
+    background-size: contain;
+    background-size: 30%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    font-family: 'Raleway', sans-serif;
+    gap: 2rem;
+}
+
+.logos {
+    height: 15vh;
+}
+
+.logo {
+    height: 80%;
+    margin: 0 0.5rem 0 0.5rem;
+    border-radius: 50%;
+    border: 3px solid black;
+    box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, .7);
+}
+
+.name {
+    color: black;
+    font-size: 5rem;
+    font-variant: small-caps;
+    text-shadow: 1rem 1rem 1rem rgba(0, 0, 0, .7);
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.card p {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.top_button {
+    opacity: 20%;
+    position: fixed;
+    margin-left: 92vw;
+    margin-top: 85vh;
+}
+
+.top_button img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.top_button:hover {
+    opacity: 80%;
+}
+
+#menu {
+    padding: 1rem 0 1rem 0;
+}
+
+#about_us {
+    background-color: whitesmoke;
+    min-height: 85vh;
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_us {
+    height: 80%;
+    width: 80%;
+}
+
+.about_us div {
+    display: flex;
+    gap: 5rem;
+    border: 2px solid white;
+    opacity: 80%;
+    color: white;
+    padding: 0.5rem;
+    width: 50%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    font-size: large;
+}
+
+.about_us img {
+    width: 50%;
+}
+
+.left {
+    margin-left: auto;
+}
+
+footer {
+    background-color: black;
+    margin-top: 1rem;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}

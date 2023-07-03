@@ -1,0 +1,220 @@
+.icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+    opacity: 80%;
+}
+
+#filters:hover {
+    opacity: 100%;
+}
+
+input {
+    height: 2rem;
+    border-radius: 10px;
+}
+
+.filter {
+    display: block !important;
+}
+
+.card img {
+    width: 80% !important;
+    border-radius: 50%;
+}
+
+.cards-amount {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.card-amount:hover {
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.topic {
+    font-weight: bold;
+}
+
+.disable {
+    display: none !important;
+}
+
+.able {
+    display: block;
+}
+
+.cards {
+    padding-top: 3rem;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card {
+    display: none;
+    background-color: black !important;
+    color: white !important;
+    max-width: 20%;
+    border: 2px solid black;
+    border-radius: 1rem !important;
+    padding: 0.5rem 1rem;
+    opacity: 80%;
+}
+
+.card:hover {
+    opacity: 100%;
+}
+
+.tags {
+    color: blue;
+}
+
+.card:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    cursor: pointer;
+}
+
+.card img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card p {
+    font-size: x-large;
+    text-align: center;
+}
+
+.card-amount {
+    border: 2px solid white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 0rem 1rem;
+    opacity: 80%;
+    color: white;
+}
+
+.shadow:hover {
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .175);
+}
+
+.topics {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.topic {
+    border: 2px solid white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: x-large;
+    color: white;
+    opacity: 80%;
+    font-variant: small-caps;
+}
+
+.topic:hover {
+    cursor: pointer;
+    opacity: 100%;
+}
+
+@media(max-width: 768px) {
+    body {
+        background-size: 70%;
+    }
+
+    .name {
+        font-size: xx-large;
+    }
+
+    .logos {
+        height: 10vh;
+    }
+
+    .card {
+        max-width: 40%;
+    }
+
+    .card-amount h3 {
+        display: inline;
+    }
+
+    .card-amount {
+        padding: 0.5rem 0.5rem;
+    }
+
+    .card .tags {
+        display: block;
+        font-size: larger;
+    }
+
+    .cards {
+        padding-top: 4rem;
+    }
+
+    #filters {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .topics {
+        gap: 0.5rem;
+    }
+
+    .topic {
+        padding: 0rem 0.5rem;
+        font-size: medium;
+    }
+
+    .card h2 {
+        font-size: larger;
+    }
+
+    .card p {
+        font-size: large;
+    }
+
+    .price {
+        padding-bottom: 1rem;
+    }
+
+    @media (max-width: 320px) {
+        .card h2 {
+            font-size: larger;
+        }
+
+        .topics h2 {
+            font-size: larger;
+        }
+
+        .topics {
+            gap: 0.1rem;
+        }
+    }
+}
